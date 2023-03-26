@@ -65,5 +65,6 @@ public class HelloApplication extends Application {
     // dung git lan 3
     // dung git lan 4 edit in laptop
     // dung git lan 5 edit in destop home
+    // dung git lan 6 edit in desktop home
 
 }
