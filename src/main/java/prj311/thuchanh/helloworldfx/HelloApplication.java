@@ -60,5 +60,6 @@ public class HelloApplication extends Application {
         System.out.println("stop () method");
     }
 
+    // dung git lan 1
 
 }
