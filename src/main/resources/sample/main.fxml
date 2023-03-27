@@ -13,9 +13,9 @@
         <MenuBar>
             <menus>
                 <Menu text="Contacts">
-                    <items>
+                    <!-- <items>
                         <MenuItem text="Add..." onAction="#showAddContactDialog"/>
-                    </items>
+                    </items> -->
                 </Menu>
             </menus>
         </MenuBar>
