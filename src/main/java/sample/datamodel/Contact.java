@@ -8,6 +8,10 @@ public class Contact {
     private SimpleStringProperty phoneNumber = new SimpleStringProperty("");
     private SimpleStringProperty notes = new SimpleStringProperty("");
 
+    public Contact() {
+
+    }
+
     public String getFirstName() {
         return firstName.get();
     }
