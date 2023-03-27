@@ -12,17 +12,18 @@ import java.util.Map;
 
 public class Main extends Application {
     @Override
-    public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("hello-view.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 320, 240);
+    public void start(Stage primaryStage) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("main.fxml"));
+        Scene scene = new Scene(fxmlLoader.load(), 600, 400);
 
 //        Text msg = new Text("Hello JavaFX ok");
 //        VBox root = new VBox();
 //        root.getChildren().add(msg);
 
-        stage.setTitle("Hello!");
-        stage.setScene(scene);
-        stage.show();
+        primaryStage.setTitle("My Contacts");
+        primaryStage.setScene(scene);
+        primaryStage.show();
+
         String name = Thread.currentThread().getName();
         System.out.println("FXLifeCycleApp() constructor: " + name);
 
