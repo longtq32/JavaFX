@@ -1,4 +1,4 @@
-package prj311.thuchanh.helloworldfx;
+package sample;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;

@@ -3,6 +3,6 @@ module prj311.thuchanh.helloworldfx {
     requires javafx.fxml;
 
 
-    opens prj311.thuchanh.helloworldfx to javafx.fxml;
-    exports prj311.thuchanh.helloworldfx;
+    opens sample to javafx.fxml;
+    exports sample;
 }

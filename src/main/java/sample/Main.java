@@ -1,4 +1,4 @@
-package prj311.thuchanh.helloworldfx;
+package sample;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
