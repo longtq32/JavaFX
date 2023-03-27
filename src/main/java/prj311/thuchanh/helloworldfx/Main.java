@@ -2,6 +2,7 @@ package prj311.thuchanh.helloworldfx;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.TextArea;
 import javafx.stage.Stage;
@@ -13,16 +14,18 @@ import java.util.Map;
 public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("main.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 600, 400);
+        Parent root = FXMLLoader.load(getClass().getResource("main.fxml"));
+        primaryStage.setTitle("My Contacts");
+        primaryStage.setScene(new Scene(root, 600, 400));
+        primaryStage.show();
 
+//        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("main.fxml"));
+//        Scene scene = new Scene(fxmlLoader.load(), 600, 400);
 //        Text msg = new Text("Hello JavaFX ok");
 //        VBox root = new VBox();
 //        root.getChildren().add(msg);
 
-        primaryStage.setTitle("My Contacts");
-        primaryStage.setScene(scene);
-        primaryStage.show();
+
 
         String name = Thread.currentThread().getName();
         System.out.println("FXLifeCycleApp() constructor: " + name);
