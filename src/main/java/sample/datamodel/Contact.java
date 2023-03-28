@@ -12,6 +12,13 @@ public class Contact {
 
     }
 
+    public Contact(String firstName, String lastName, String phoneNumber, String notes) {
+        this.firstName.set(firstName);
+        this.lastName.set(lastName);
+        this.phoneNumber.set(phoneNumber);
+        this.notes.set(notes);
+    }
+
     public String getFirstName() {
         return firstName.get();
     }
@@ -70,12 +77,12 @@ public class Contact {
                 '}';
     }
 
-    public Contact(SimpleStringProperty firstName, SimpleStringProperty lastName, SimpleStringProperty phoneNumber, SimpleStringProperty notes) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.phoneNumber = phoneNumber;
-        this.notes = notes;
-    }
+//    public Contact(SimpleStringProperty firstName, SimpleStringProperty lastName, SimpleStringProperty phoneNumber, SimpleStringProperty notes) {
+//        this.firstName = firstName;
+//        this.lastName = lastName;
+//        this.phoneNumber = phoneNumber;
+//        this.notes = notes;
+//    }
 
 
 
