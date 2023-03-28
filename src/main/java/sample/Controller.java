@@ -16,7 +16,7 @@ import java.util.Optional;
 public class Controller {
 
     @FXML
-    public BorderPane mainPanel;
+    private BorderPane mainPanel;
 
     @FXML
     private TableView<Contact> contactsTable;
@@ -54,10 +54,6 @@ public class Controller {
             data.addContact(newContact);
             data.saveContacts();
         }
-
-
-
-
     }
 }
 
